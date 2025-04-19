@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFF8F0;
+  --foreground: #5E2B0F;
+  --accent-1: #E6A74C; /* Orange */
+  --accent-2: #BB482D; /* Red */
+  --accent-3: #CDAD5D; /* Yellow */
+  --accent-4: #74480F; /* Brown */
+  --accent-5: #D4662F; /* Dark orange */
 }
 
 @theme inline {
@@ -14,8 +19,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1F0F05;
+    --foreground: #F8E2CF;
   }
 }
 
@@ -23,4 +28,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hide autumn leaves on specific pages */
+.leaves-disabled .leaves-container {
+  display: none;
 }
