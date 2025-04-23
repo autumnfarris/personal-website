@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Autumn's Cozy Developer Space",
-  description: "Fall-themed personal space and guestbook of Autumn, a software developer",
+  description: "Fall-themed personal space of Autumn, a software developer",
 };
 
 export default function RootLayout({
