@@ -34,7 +34,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Hi, I'm{' '}
+              Hi, I&apos;m{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">
                 Autumn
               </span>
@@ -66,7 +66,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               <Button href="/contact" size="lg" className="shadow-xl">
-                Let's Connect
+                Let&apos;s Connect
               </Button>
               <Button href="/experience" variant="outline" size="lg">
                 View My Work

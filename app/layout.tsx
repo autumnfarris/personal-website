@@ -20,7 +20,10 @@ export const metadata: Metadata = {
   description: "Professional portfolio of Autumn Farris, a passionate full-stack developer specializing in modern web technologies and user-centered design.",
   keywords: "Autumn Farris, Full Stack Developer, React, Next.js, TypeScript, Web Development, Software Engineer",
   authors: [{ name: "Autumn Farris" }],
-  viewport: "width=device-width, initial-scale=1",
+  viewport: { 
+    width: "device-width",
+    initialScale: 1,
+  },
   openGraph: {
     title: "Autumn Farris | Full Stack Developer",
     description: "Professional portfolio showcasing modern web development projects and expertise in React, TypeScript, and full-stack technologies.",

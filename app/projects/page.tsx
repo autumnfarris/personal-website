@@ -96,7 +96,7 @@ export default function ProjectsPage() {
             Featured <span className="text-amber-600">Projects</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A showcase of applications and systems I've designed and built, 
+            A showcase of applications and systems I&apos;ve designed and built, 
             ranging from enterprise solutions to personal projects that demonstrate 
             my passion for creating meaningful digital experiences.
           </p>
@@ -230,8 +230,8 @@ export default function ProjectsPage() {
             Interested in Working Together?
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            I'm always excited to take on new challenges and collaborate on innovative projects. 
-            Let's discuss how we can bring your ideas to life.
+            I&apos;m always excited to take on new challenges and collaborate on innovative projects. 
+            Let&apos;s discuss how we can bring your ideas to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/contact" size="lg">

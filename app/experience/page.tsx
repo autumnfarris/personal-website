@@ -146,8 +146,8 @@ export default function ExperiencePage() {
             Professional <span className="text-amber-600">Experience</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A journey through my career in software development, showcasing the impact I've made 
-            and the skills I've developed across diverse projects and teams.
+            A journey through my career in software development, showcasing the impact I&apos;ve made 
+            and the skills I&apos;ve developed across diverse projects and teams.
           </p>
         </motion.div>
 

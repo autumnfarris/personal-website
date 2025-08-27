@@ -27,22 +27,33 @@ export default function ContactPage() {
     setSubmitStatus('idle');
     
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      
-      const result = await response.json();
-      
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        throw new Error(result.error || 'Failed to send message');
+      // Validate form data
+      if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+        throw new Error('All fields are required');
       }
+
+      // Create mailto URL with form data
+      const mailtoSubject = encodeURIComponent(`Contact Form: ${formData.subject}`);
+      const mailtoBody = encodeURIComponent(
+        `Name: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Subject: ${formData.subject}\n\n` +
+        `Message:\n${formData.message}\n\n` +
+        `---\nSent from autumnfarris.com contact form`
+      );
+      
+      const mailtoUrl = `mailto:autumn@autumnfarris.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+      
+      // Simulate processing time
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Open user's email client
+      window.location.href = mailtoUrl;
+      
+      // Mark as successful and reset form
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+      
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');
@@ -68,11 +79,11 @@ export default function ContactPage() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            Let's <span className="text-amber-600">Connect</span>
+            Let&apos;s <span className="text-amber-600">Connect</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I'm always interested in new opportunities, collaborations, and conversations. 
-            Whether you have a project in mind or just want to say hello, I'd love to hear from you.
+            I&apos;m always interested in new opportunities, collaborations, and conversations. 
+            Whether you have a project in mind or just want to say hello, I&apos;d love to hear from you.
           </p>
         </motion.div>
 
@@ -208,7 +219,7 @@ export default function ContactPage() {
                   Send Me a Message
                 </h2>
                 <p className="text-gray-600">
-                  Fill out the form below and I'll get back to you as soon as possible.
+                  Fill out the form below and I&apos;ll get back to you as soon as possible.
                 </p>
               </CardHeader>
               <CardContent>
@@ -282,7 +293,7 @@ export default function ContactPage() {
                   {submitStatus === 'success' && (
                     <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
                       <p className="text-green-800 font-medium">
-                        ✅ Message sent successfully! I'll get back to you soon.
+                        ✅ Message sent successfully! I&apos;ll get back to you soon.
                       </p>
                     </div>
                   )}

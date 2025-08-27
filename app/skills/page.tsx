@@ -201,7 +201,7 @@ export default function SkillsPage() {
               reusable, and every user interaction should feel intuitive and delightful.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Technology is constantly evolving, and I'm committed to continuous learning and 
+              Technology is constantly evolving, and I&apos;m committed to continuous learning and 
               staying current with industry best practices. I strive to balance innovation with 
               stability, always considering the long-term impact of architectural decisions.
             </p>

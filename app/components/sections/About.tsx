@@ -46,7 +46,7 @@ export default function About() {
               <CardContent>
                 <div className="space-y-4 text-gray-600">
                   <p>
-                    I'm a versatile full-stack developer with a unique blend of technical expertise 
+                    I&apos;m a versatile full-stack developer with a unique blend of technical expertise 
                     and communication skills. My background combines real-world experience with 
                     academic excellence in both Computer Science and Communication.
                   </p>
@@ -57,7 +57,7 @@ export default function About() {
                     collaborative relationships with both technical teams and stakeholders.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies, contributing 
+                    When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing 
                     to open source projects, or sharing knowledge with the developer community.
                   </p>
                 </div>
@@ -67,11 +67,11 @@ export default function About() {
                   <div className="space-y-2 text-sm text-gray-600">
                     <div className="flex justify-between">
                       <span>Computer Information Systems, B.S.</span>
-                      <span className="text-amber-600 font-medium">Bachelor's Degree</span>
+                      <span className="text-amber-600 font-medium">Bachelor&apos;s Degree</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Communication, B.S.</span>
-                      <span className="text-amber-600 font-medium">Bachelor's Degree</span>
+                      <span className="text-amber-600 font-medium">Bachelor&apos;s Degree</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Mastering Design Thinking</span>
