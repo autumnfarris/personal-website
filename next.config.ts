@@ -6,7 +6,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true, // important for GitHub Pages routing
-  basePath: "/personal-website"
+  basePath: "/personal-website",
+  assetPrefix: "/personal-website"
 };
 
 export default nextConfig;
