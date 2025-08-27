@@ -6,8 +6,8 @@ import AutumnLeaves from "./AutumnLeaves";
 export default function AutumnLeavesConditional() {
   const pathname = usePathname();
   
-  // Don't show leaves on the experience page
-  if (pathname === "/experience") {
+  // Only show leaves on the Home page
+  if (pathname !== "/") {
     return null;
   }
   
