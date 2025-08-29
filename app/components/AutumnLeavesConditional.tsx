@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import AutumnLeaves from "./AutumnLeaves";
+import TreeWithLeaves from "./TreeWithLeaves";
 
 export default function AutumnLeavesConditional() {
   const pathname = usePathname();
@@ -11,5 +11,5 @@ export default function AutumnLeavesConditional() {
     return null;
   }
   
-  return <AutumnLeaves />;
+  return <TreeWithLeaves />;
 }
