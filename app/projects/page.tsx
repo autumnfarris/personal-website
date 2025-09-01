@@ -10,63 +10,92 @@ const projects = [
   {
     title: 'Oceanographic Data Management System',
     description: 'Enterprise-level application for managing scientific data from oceanographic surveys. Features offline-first architecture, real-time sensor data visualization, and comprehensive data analysis tools.',
-    technologies: ['React', 'Node.js', 'Express', 'MySQL', 'Python', 'D3.js', 'Docker'],
+    technologies: ['React', 'Node.js', 'Express.js', 'MySQL', 'Axios', 'MySQL2' ,'PWA', 'IndexedDB', 'Mantine'],
     category: 'Enterprise Application',
     highlights: [
-      'Reduced data processing time by 60%',
+      'Reduced data processing time by 75%',
       'Supports offline functionality for at-sea research',
-      'Handles data from 50+ different sensor types',
-      'Used by 200+ scientists and researchers'
+      'Handles data from 3 different sensor types',
+      'Used by federal scientists and researchers',
+			'Impacts international seafood markets'
     ],
     status: 'Production',
-    year: '2022-Present'
+    year: '2023-2025'
   },
   {
-    title: 'Real-Time Collaboration Platform',
-    description: 'Full-stack web application enabling seamless collaboration between remote teams. Features include real-time editing, video conferencing integration, and project management tools.',
-    technologies: ['Vue.js', 'Vuetify', 'Node.js', 'Socket.io', 'PostgreSQL', 'AWS'],
-    category: 'Web Application',
+    title: 'Travel Request',
+    description: 'Web application for managing employee travel requests. Streamlined paper-based workflow by automating approvals, creating custom reporting, and integratiion with Google Workspace tools.',
+    technologies: ['Vue.js', 'Vuetify', 'Google Apps Script', 'GitLab', 'Google Sheets', 'Jira', 'Balsamiq'],
+    category: 'Enterprise Application',
     highlights: [
-      'Real-time collaborative editing',
-      'Integrated video conferencing',
-      'Project timeline management',
-      'File sharing and version control'
+      'Streamlined travel request process',
+      'Integrated with Google Workspace tools',
+      'Seamless user experience',
+			'Automated email notifications'
     ],
     status: 'Production',
-    year: '2021-2022'
+    year: '2022-2023'
   },
   {
-    title: 'E-Commerce Analytics Dashboard',
-    description: 'Comprehensive analytics platform providing insights into customer behavior, sales performance, and inventory management. Built with modern React patterns and responsive design.',
-    technologies: ['React', 'TypeScript', 'Chart.js', 'Material-UI', 'Node.js', 'MongoDB'],
-    category: 'Dashboard',
+    title: 'Micro-Purchasing',
+    description: 'Web application streamlining the micro-purchasing process for government agencies. Features include real-time approval workflows, budget tracking, and vendor management.',
+    technologies: ['Vue.js', 'Vuetify', 'Google Apps Script', 'GitLab', 'Google Sheets', 'Jira'],
+    category: 'Enterprise Application',
     highlights: [
-      'Interactive data visualizations',
-      'Real-time sales tracking',
-      'Predictive inventory analytics',
-      'Custom report generation'
+      'Facilitated government purchasing',
+      'Real-time approval tracking',
+      'Custom report generation',
+			'User-friendly interface'
     ],
-    status: 'Completed',
-    year: '2021'
+    status: 'Production',
+    year: '2023'
   },
   {
-    title: 'Mobile-First Restaurant Ordering System',
-    description: 'Progressive web application for restaurant ordering with offline capability. Features QR code menu access, real-time order tracking, and payment integration.',
-    technologies: ['React', 'PWA', 'Stripe API', 'Firebase', 'Service Workers'],
-    category: 'Mobile Application',
+    title: 'Item Exchange',
+    description: 'Internal application used for exchanging items between departments. Features include image uploads, automated email notifications, and inventory management.',
+    technologies: ['Vue.js', 'Vuetify', 'Google Apps Script', 'GitLab', 'Google Sheets', 'Jira'],
+    category: 'Enterprise Application',
     highlights: [
-      'Offline ordering capability',
-      'QR code menu integration',
-      'Real-time order status updates',
-      'Integrated payment processing'
+      'Seamless item exchange process',
+      'Automated email notifications',
+      'Intuitive user interface',
+      'Real-time inventory tracking'
     ],
-    status: 'Completed',
-    year: '2020'
+    status: 'Production',
+    year: '2022'
+  },
+	{
+    title: 'Account Request',
+    description: 'Internal application used for managing user account requests. Features include image uploads/display, automated email notifications, and inventory management.',
+    technologies: ['jQuery', 'Javascript', 'Material Design', 'Google Apps Script', 'GitLab', 'Google Sheets'],
+    category: 'Enterprise Application',
+    highlights: [
+      'Streamlined account request process',
+      'Automated email notifications',
+      'Intuitive user interface',
+      'Real-time status updates'
+    ],
+    status: 'Production',
+    year: '2022'
+  },
+	{
+    title: 'VPN Request',
+    description: 'Simple application used for managing internal VPN requests.',
+    technologies: ['Vue.js', 'Vuetify', 'Google Apps Script', 'GitLab', 'Google Sheets', 'Jira'],
+    category: 'Enterprise Application',
+    highlights: [
+      'Streamlined VPN request process',
+			'Jira integration',
+      'Automated email notifications',
+      'Custom reporting'
+    ],
+    status: 'Production',
+    year: '2022'
   },
   {
     title: 'Personal Developer Portfolio',
     description: 'Modern, responsive portfolio website built with Next.js and featuring smooth animations, optimized performance, and accessibility-first design principles.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Claude', 'Lyra'],
     category: 'Portfolio',
     highlights: [
       'Lighthouse score of 100/100',
@@ -75,9 +104,9 @@ const projects = [
       'Accessibility compliant'
     ],
     status: 'Active',
-    year: '2024',
+    year: '2025',
     liveUrl: '/',
-    githubUrl: '#'
+    githubUrl: 'https://github.com/autumnfarris/personal-website'
   }
 ];
 
