@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   const skills = [
-    'JavaScript', 'TypeScript', 'React', 'Next.js', 'Vue.js', 'Node.js',
-    'Python', 'SQL', 'MySQL', 'PostgreSQL', 'Oracle', 'Express.js',
-    'TailwindCSS', 'SCSS', 'Git', 'Docker', 'AWS', 'Google Cloud'
+    'JavaScript', 'React', 'Next.js', 'Vue.js', 'Node.js',
+    'Python', 'SQL', 'MySQL', 'Express.js', 'Mantine',
+    'TailwindCSS', 'SCSS', 'Git','Google Apps Script'
   ];
 
   return (
@@ -57,8 +57,7 @@ export default function About() {
                     collaborative relationships with both technical teams and stakeholders.
                   </p>
                   <p>
-                    When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing 
-                    to open source projects, or sharing knowledge with the developer community.
+                    When I&apos;m not coding, you&apos;ll find me enjoying a hot yoga class, flipping through a great read, or planning my next getaway.
                   </p>
                 </div>
 
@@ -129,11 +128,10 @@ export default function About() {
                     <h4 className="font-semibold text-gray-900 mb-2">Core Competencies</h4>
                     <ul className="text-sm text-gray-600 space-y-1 list-disc list-inside">
                       <li>Full-Stack Web Development</li>
-                      <li>Database Design & Management</li>
-                      <li>API Development & Integration</li>
                       <li>User Experience Design</li>
+											<li>Communication</li>
                       <li>Technical Documentation</li>
-                      <li>Team Leadership & Mentoring</li>
+                      <li>Project Leadership</li>
                     </ul>
                   </div>
                 </div>

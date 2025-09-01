@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Left side */}
           <div className="mb-4 md:mb-0">
-            <p className="text-gray-700 flex items-center">
+            {/* <p className="text-gray-700 flex items-center">
               Made with <HeartIcon className="h-4 w-4 text-red-500 mx-1" /> and lots of coffee
-            </p>
+            </p> */}
           </div>
 
           {/* Right side */}

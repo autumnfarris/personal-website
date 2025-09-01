@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-amber-200/30 to-orange-200/30 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-gradient-to-br from-orange-200/30 to-red-200/30 rounded-full blur-3xl animate-pulse delay-1000" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           {/* Text Content */}
@@ -99,8 +99,8 @@ export default function Hero() {
             </div>
           </motion.div>
         </div>
-
-        {/* Scroll indicator */}
+      </div>
+			 {/* Scroll indicator */}
         <motion.div 
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
           initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,6 @@ export default function Hero() {
             <ChevronDownIcon className="h-6 w-6 text-gray-700 animate-bounce" />
           </button>
         </motion.div>
-      </div>
     </section>
   );
 }

@@ -5,49 +5,49 @@ import Card, { CardContent, CardHeader } from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
 
 const skillCategories = [
-  {
-    title: 'Frontend Development',
-    skills: ['React', 'Next.js', 'Vue.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'SCSS', 'Bootstrap'],
-    icon: '🎨'
-  },
-  {
-    title: 'Backend Development',
-    skills: ['Node.js', 'Express.js', 'Python', 'Java', 'Elixir', 'RESTful APIs', 'GraphQL', 'Microservices'],
-    icon: '⚙️'
-  },
-  {
-    title: 'Database & Storage',
-    skills: ['MySQL', 'PostgreSQL', 'SQLite', 'Oracle', 'MongoDB', 'Redis', 'SQL Optimization', 'Database Design'],
-    icon: '🗃️'
-  },
-  {
-    title: 'Cloud & DevOps',
-    skills: ['AWS', 'Google Cloud', 'Docker', 'CI/CD', 'GitHub Actions', 'Linux', 'Nginx', 'Load Balancing'],
-    icon: '☁️'
-  },
-  {
-    title: 'Development Tools',
-    skills: ['Git', 'GitHub', 'GitLab', 'Jira', 'VS Code', 'Jest', 'Testing Library', 'Webpack', 'Vite'],
-    icon: '🛠️'
-  },
-  {
-    title: 'Design & UX',
-    skills: ['Figma', 'Adobe XD', 'Wireframing', 'Prototyping', 'User Research', 'Design Systems', 'Accessibility', 'Responsive Design'],
-    icon: '🎯'
-  }
+	{
+		title: 'Frontend Development',
+		skills: ['React', 'Next.js', 'Vue.js', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'SCSS', 'Mantine', 'Vuetify', 'Google Apps Script'],
+		icon: '🎨'
+	},
+	{
+		title: 'Backend Development',
+		skills: ['Node.js', 'Express.js', 'Python', 'RESTful APIs', 'Axios','Google Apps Script', 'MySQL2'],
+		icon: '⚙️'
+	},
+	{
+		title: 'AI & Machine Learning',
+		skills: ['GitHub Copilot', 'Claude', 'ChatGPT', 'Lyra AI Prompt Optimization',],
+		icon: '🤖'
+	},
+	{
+		title: 'Development Tools',
+		skills: ['Git', 'GitHub', 'GitLab', 'Jira', 'VS Code', 'End to End Testing', 'Webpack', 'Slack', 'Agile'],
+		icon: '🛠️'
+	},
+	{
+		title: 'Design & UX',
+		skills: ['Balsamiq', 'Wireframing', 'Prototyping', 'User Research', 'Design Systems', 'Responsive Design'],
+		icon: '🎯'
+	},
+	{
+		title: 'Database & Storage',
+		skills: ['MySQL', 'SQLite', 'Oracle', 'NoSQL' ],
+		icon: '🗃️'
+	},
 ];
 
 const certifications = [
   {
     name: 'Mastering Design Thinking',
-    issuer: 'MIT',
+    issuer: 'Massachusetts Institute of Technology (MIT)',
     year: '2023',
     description: 'Advanced certification in human-centered design principles and methodologies'
   },
   {
     name: 'Software Architecture Principles and Practices',
-    issuer: 'Carnegie Mellon University',
-    year: '2023',
+    issuer: 'Carnegie Mellon University (CMU)',
+    year: '2024',
     description: 'Comprehensive study of scalable software architecture patterns and best practices'
   }
 ];
