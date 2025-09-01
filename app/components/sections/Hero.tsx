@@ -89,7 +89,7 @@ export default function Hero() {
               {/* Main image */}
               <div className="relative w-80 h-96 rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/personal-website/autumn_new.jpg"
+                  src={process.env.NODE_ENV === 'production' ? '/personal-website/autumn_new.jpg' : '/autumn_new.jpg'}
                   alt="Autumn Farris - Full Stack Developer"
                   fill
                   className="object-cover object-top"
