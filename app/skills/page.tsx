@@ -31,8 +31,8 @@ const skillCategories = [
 		icon: '🎯'
 	},
 	{
-		title: 'Database & Storage',
-		skills: ['MySQL', 'SQLite', 'Oracle', 'NoSQL' ],
+		title: 'Database & OS',
+		skills: ['MySQL', 'SQLite', 'Oracle', 'NoSQL', 'Windows OS', 'Mac OS', 'IIS'],
 		icon: '🗃️'
 	},
 ];

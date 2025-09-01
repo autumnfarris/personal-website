@@ -12,7 +12,7 @@ const experiences = [
     title: 'Lead Software Engineer',
     company: 'NOAA: National Oceanic & Atmospheric Administration',
     location: 'Seattle, Washington, United States · Remote',
-    duration: 'Nov 2022 - Present · 2 yrs 6 mos',
+    duration: 'Nov 2022 - Present · 2 yrs 4 mos',
     logo: isProduction ? '/personal-website/noaa_logo.png' : '/noaa_logo.png',
     achievements: [
       'Earned rapport from stakeholders by participating in at sea surveys as the role of a scientist, gaining first hand knowledge of user needs and pain points.',
@@ -28,10 +28,11 @@ const experiences = [
     ],
     skills: [
       'React.js', 'Python', 'Express.js', 'SQL', 'Javascript', 'MySQL', 
-      'Oracle Database', 'SQLite', 'Google Apps Script', 'Node.js', 'Vue.js', 
+      'Oracle', 'Google Apps Script', 'Node.js', 'Vue.js', 
       'Vuetify', 'Software Documentation', 'IIS', 'Mantine', 'SDLC', 
       'Full-Stack Development', 'Design Thinking', 'Software Design', 'Balsamiq', 
-      'Wireframing', 'Android Studio', 'Jira'
+      'Wireframing', 'Android Studio', 'Jira', 'GitLab', 'Team Leadership', 'Customer Support', 'Project Management', 'UX Designer', 'Business Analyst', 'End to End testing', 
+			'Technical Writing', 'Windows OS', 'VS Code'
     ]
   },
   {
@@ -53,8 +54,9 @@ const experiences = [
     ],
     skills: [
       'Javascript', 'Vue.js', 'Vuetify', 'Design Thinking', 'Back-End Web Development',
-      'Java', 'Google Apps Script', 'Full-Stack Development', 'Front-End Development',
-      'Team Leadership', 'Wireframing', 'Balsamiq'
+      'Google Apps Script', 'Full-Stack Development', 'Front-End Development',
+      'Wireframing', 'Balsamiq', 'GitLab', 'End to End testing', 'jQuery', 'Jira', 'Java', 'Java Swing', 'Material Design',
+			'Design Thinking', 'Windows OS', 'VS Code', 'Customer Support'
     ]
   },
   {
@@ -69,7 +71,7 @@ const experiences = [
       'Implemented new features and bug fixes according to requirements',
       'Opened, reviewed, and approved pull requests using GitHub'
     ],
-    skills: ['Elixir']
+    skills: ['Elixir', 'Phoenix', 'Erlang', 'GitHub', 'Slack', 'Mac OS', 'Git', 'Atom']
   },
   {
     title: 'Software Developer [Intern]',
@@ -88,13 +90,13 @@ const experiences = [
     ],
     skills: [
       'Javascript', 'Vue.js', 'TypeScript', 'Scrum', 'Agile Methodologies', 
-      'Amazon Web Services (AWS)'
+      'Amazon Web Services (AWS)', 'Terraform', 'Mac OS', 'VS Code'
     ]
   },
   {
     title: 'Shift Lead / Bartender',
     company: 'Bair\'s Sports Grill',
-    location: 'Springfield, MO',
+    location: 'Springfield, MO, United States',
     duration: 'Jul 2013 - May 2018 · 4 yrs 11 mos',
 		logo: isProduction ? '/personal-website/bairs.jpg' : '/bairs.jpg',
     achievements: [
@@ -108,14 +110,14 @@ const experiences = [
       'Earned employee of the month award'
     ],
     skills: [
-      'Customer Relationship Management (CRM)', 'Bartending', 'People Management', 
-      'Employee Training', 'Sales'
+      'Customer Relationship Management (CRM)', 'Bartending', 'Communication', 
+      'Employee Training', 'Sales', 'Multitasking', 'Team Leadership', 'Conflict Resolution'
     ]
   },
   {
     title: 'Development Lead [Intern]',
     company: 'Big Brothers Big Sisters of the Ozarks',
-    location: 'Springfield, MO',
+    location: 'Springfield, MO, United States',
     duration: 'Jan 2017 - Jul 2017 · 7 mos',
 		logo: isProduction ? '/personal-website/bbbs.png' : '/bbbs.png',
     achievements: [
@@ -128,7 +130,7 @@ const experiences = [
       'Raised $13,455 in value for silent auction items surpassing self provided goal by 65%'
     ],
     skills: [
-      'Communication', 'Sales', 'Customer Engagement', 'Fundraising', 'Nonprofit Volunteering'
+      'Communication', 'Sales', 'Customer Engagement', 'Fundraising', 'Nonprofit Volunteering', 'Community Outreach'
     ]
   }
 ];
