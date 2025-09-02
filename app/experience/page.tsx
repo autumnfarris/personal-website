@@ -117,7 +117,7 @@ const experiences = [
     company: 'Big Brothers Big Sisters of the Ozarks',
     location: 'Springfield, MO, United States',
     duration: 'Jan 2017 - Jul 2017 · 7 mos',
-		logo: '/bbbs.png',
+		logo: '/BBBS.png',
     achievements: [
       'Acquired new donor leads still used for current fundraising events',
       'Established connections with board members using interpersonal skills',

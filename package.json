@@ -6,12 +6,11 @@
   "scripts": {
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build && echo 'autumnfarris.com' > out/CNAME",
+    "predeploy": "npm run build && node scripts/createCNAME.js",
 		"dev": "next dev",
 		"clean": "rimraf .next out dist",
-  	"build": "next build",
-		"package": "shx rm -rf dist && shx mkdir -p dist && shx cp -r out/* dist && shx touch dist/.nojekyll",
-		"deploy": "npm run build && npm run package && npx gh-pages -d dist"
+  "build": "next build",
+  "deploy": "npx gh-pages -d out"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
