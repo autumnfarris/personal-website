@@ -5,15 +5,13 @@ import Image from 'next/image';
 import Card, { CardContent, CardHeader } from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
 
-let isProduction = process.env.NODE_ENV === 'production';
-
 const experiences = [
   {
     title: 'Lead Software Engineer',
     company: 'NOAA: National Oceanic & Atmospheric Administration',
     location: 'Seattle, Washington, United States · Remote',
     duration: 'Nov 2022 - Present · 2 yrs 4 mos',
-    logo: isProduction ? '/personal-website/noaa_logo.png' : '/noaa_logo.png',
+    logo: '/noaa_logo.png',
     achievements: [
       'Earned rapport from stakeholders by participating in at sea surveys as the role of a scientist, gaining first hand knowledge of user needs and pain points.',
       'Improved development timelines by creating prototypes as a communication tool for workflow and design verification with clients.',
@@ -40,7 +38,7 @@ const experiences = [
     company: 'IBSS',
     location: 'Seattle, Washington, United States',
     duration: 'Aug 2021 - Nov 2022 · 1 yr 4 mos',
-		logo: isProduction ? '/personal-website/ibss.png' : '/ibss.png',
+		logo: '/ibss.png',
     achievements: [
       'Developed full stack enterprise applications replacing paper form-based workflows and providing smooth processes for users and managers, substantially reducing process times and overall stress of staff.',
       'Performed as project manager organizing the creation of new applications for enterprise use.',
@@ -64,7 +62,7 @@ const experiences = [
     company: 'Glasswerks',
     location: 'Remote',
     duration: 'Nov 2018 - May 2019 · 7 mos',
-		logo: isProduction ? '/personal-website/glasswerks.png' : '/glasswerks.png',
+		logo: '/glasswerks.png',
     achievements: [
       'Helped develop and deploy customer order tracking web app used daily',
       'Used Elixir and TDD skills to test and deploy back end logic',
@@ -78,7 +76,7 @@ const experiences = [
     company: 'Common Ledger',
     location: 'Wellington, New Zealand',
     duration: 'Jun 2018 - Aug 2018 · 2 mos',
-		logo: isProduction ? '/personal-website/common-ledger.jpg' : '/common-ledger.jpg',
+		logo: '/common-ledger.jpg',
     achievements: [
       'Assisted in developing and deploying a full stack web application used daily by the general public.',
       'Relocated to New Zealand to work closely with developers to manage complex projects.',
@@ -98,7 +96,7 @@ const experiences = [
     company: 'Bair\'s Sports Grill',
     location: 'Springfield, MO, United States',
     duration: 'Jul 2013 - May 2018 · 4 yrs 11 mos',
-		logo: isProduction ? '/personal-website/bairs.jpg' : '/bairs.jpg',
+		logo: '/bairs.jpg',
     achievements: [
       'Used empathy and listening skills to resolve any customer grievances',
       'Multitasked between bartending, completing take away orders, and cleaning',
@@ -119,7 +117,7 @@ const experiences = [
     company: 'Big Brothers Big Sisters of the Ozarks',
     location: 'Springfield, MO, United States',
     duration: 'Jan 2017 - Jul 2017 · 7 mos',
-		logo: isProduction ? '/personal-website/bbbs.png' : '/bbbs.png',
+		logo: '/bbbs.png',
     achievements: [
       'Acquired new donor leads still used for current fundraising events',
       'Established connections with board members using interpersonal skills',

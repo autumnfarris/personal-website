@@ -2,11 +2,11 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-	"homepage": "https://autumnfarris.github.io/personal-website",
+	"homepage": "https://autumnfarris.com",
   "scripts": {
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo 'autumnfarris.com' > out/CNAME",
 		"dev": "next dev",
 		"clean": "rimraf .next out dist",
   	"build": "next build",
