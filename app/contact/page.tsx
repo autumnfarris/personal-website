@@ -32,25 +32,23 @@ export default function ContactPage() {
         throw new Error('All fields are required');
       }
 
-      // Create mailto URL with form data
-      const mailtoSubject = encodeURIComponent(`Contact Form: ${formData.subject}`);
-      const mailtoBody = encodeURIComponent(
-        `Name: ${formData.name}\n` +
-        `Email: ${formData.email}\n` +
-        `Subject: ${formData.subject}\n\n` +
-        `Message:\n${formData.message}\n\n` +
-        `---\nSent from autumnfarris.com contact form`
-      );
+      const response = await fetch('https://formspree.io/f/mzzaalgr', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
       
-      const mailtoUrl = `mailto:autumn@autumnfarris.com?subject=${mailtoSubject}&body=${mailtoBody}`;
-      
-      // Simulate processing time
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Open user's email client
-      window.location.href = mailtoUrl;
-      
-      // Mark as successful and reset form
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
       
