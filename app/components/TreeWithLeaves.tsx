@@ -127,6 +127,51 @@ export default function TreeWithLeaves() {
 
   // Tree growth animation
   useEffect(() => {
+    const generateInitialLeaves = () => {
+      const autumnColors = [
+        "#CD853F", "#D2691E", "#DEB887", "#F4A460", "#DAA520", 
+        "#B8860B", "#BC8F8F", "#D2B48C", "#F5DEB3", "#FFE4B5",
+        "#8B4513", "#A0522D", "#CD5C5C", "#DC143C", "#B22222",
+        "#228B22", "#32CD32", "#9ACD32", "#6B8E23", "#556B2F"
+      ];
+
+      // Generate leaves from branch endpoints - convert SVG coords to viewport coords
+      const branchLeaves: Leaf[] = [];
+      
+      treeStructure.forEach((branch, index) => {
+        if (branch.level >= 2) { // Only generate leaves on smaller branches
+          for (let i = 0; i < 2; i++) {
+            // Convert SVG coordinates to viewport coordinates
+            const leafX = 85 + (branch.x2 - 50) * 0.5; // Scale and position
+            const leafY = 100 - (120 - branch.y2) * 0.8; // Flip Y and scale
+            
+            branchLeaves.push({
+              id: index * 10 + i,
+              x: leafX + (Math.random() - 0.5) * 5,
+              y: leafY + (Math.random() - 0.5) * 3,
+              rotation: Math.random() * 360,
+              scale: 0.8 + Math.random() * 0.4,
+              color: autumnColors[Math.floor(Math.random() * autumnColors.length)],
+              velocityX: (Math.random() - 0.5) * 0.03,
+              velocityY: Math.random() * 0.02 + 0.01,
+              rotationSpeed: (Math.random() - 0.5) * 3,
+              opacity: 1,
+              swingPhase: Math.random() * Math.PI * 2,
+              lifeTime: Math.random() * 8000 + 10000,
+              isAttached: true,
+              attachedBranchId: branch.id,
+              attachmentX: branch.x2,
+              attachmentY: branch.y2,
+              swayAmplitude: 0.5 + Math.random() * 1.5,
+              detachmentChance: 0.00005 + Math.random() * 0.00008
+            });
+          }
+        }
+      });
+
+      setLeaves(branchLeaves);
+    };
+
     const growTree = () => {
       setTreeGrowth(prev => {
         const newGrowth = Math.min(prev + 0.015, 1); // Better paced growth
@@ -143,52 +188,8 @@ export default function TreeWithLeaves() {
 
     const interval = setInterval(growTree, 60); // Better interval
     return () => clearInterval(interval);
-  }, [isTreeFullyGrown]);
+  }, [isTreeFullyGrown, treeStructure]);
 
-  const generateInitialLeaves = () => {
-    const autumnColors = [
-      "#CD853F", "#D2691E", "#DEB887", "#F4A460", "#DAA520", 
-      "#B8860B", "#BC8F8F", "#D2B48C", "#F5DEB3", "#FFE4B5",
-      "#8B4513", "#A0522D", "#CD5C5C", "#DC143C", "#B22222",
-      "#228B22", "#32CD32", "#9ACD32", "#6B8E23", "#556B2F"
-    ];
-
-    // Generate leaves from branch endpoints - convert SVG coords to viewport coords
-    const branchLeaves: Leaf[] = [];
-    
-    treeStructure.forEach((branch, index) => {
-      if (branch.level >= 2) { // Only generate leaves on smaller branches
-        for (let i = 0; i < 2; i++) {
-          // Convert SVG coordinates to viewport coordinates
-          const leafX = 85 + (branch.x2 - 50) * 0.5; // Scale and position
-          const leafY = 100 - (120 - branch.y2) * 0.8; // Flip Y and scale
-          
-          branchLeaves.push({
-            id: index * 10 + i,
-            x: leafX + (Math.random() - 0.5) * 5,
-            y: leafY + (Math.random() - 0.5) * 3,
-            rotation: Math.random() * 360,
-            scale: 0.8 + Math.random() * 0.4,
-            color: autumnColors[Math.floor(Math.random() * autumnColors.length)],
-            velocityX: (Math.random() - 0.5) * 0.03,
-            velocityY: Math.random() * 0.02 + 0.01,
-            rotationSpeed: (Math.random() - 0.5) * 3,
-            opacity: 1,
-            swingPhase: Math.random() * Math.PI * 2,
-            lifeTime: Math.random() * 8000 + 10000,
-            isAttached: true,
-            attachedBranchId: branch.id,
-            attachmentX: branch.x2,
-            attachmentY: branch.y2,
-            swayAmplitude: 0.5 + Math.random() * 1.5,
-            detachmentChance: 0.00005 + Math.random() * 0.00008
-          });
-        }
-      }
-    });
-
-    setLeaves(branchLeaves);
-  };
 
   // Leaf physics animation
   useEffect(() => {

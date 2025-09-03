@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { Suspense } from "react";
 import Analytics from "./analytics"; 
 import "./globals.css";
 import Navigation from "./components/layout/Navigation";
@@ -23,10 +24,6 @@ export const metadata: Metadata = {
   keywords:
     "Autumn Farris, Full Stack Developer, React, Next.js, TypeScript, Web Development, Software Engineer",
   authors: [{ name: "Autumn Farris" }],
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
   openGraph: {
     title: "Autumn Farris | Full Stack Developer",
     description:
@@ -42,6 +39,11 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -52,7 +54,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased min-h-screen`}
       >
-        <Analytics />
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
         <AutumnLeavesConditional />
         <Navigation />
         <main className="relative z-10">{children}</main>
