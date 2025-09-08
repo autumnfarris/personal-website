@@ -55,7 +55,7 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased min-h-screen`}
       >
         <Suspense fallback={null}>
-          <Analytics />
+        <Analytics />
         </Suspense>
         <AutumnLeavesConditional />
         <Navigation />
