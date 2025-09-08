@@ -11,7 +11,7 @@ const projects = [
     title: 'Oceanographic Data Management System',
     description: 'Enterprise-level application for managing scientific data from oceanographic surveys. Features offline-first architecture, real-time sensor data visualization, and comprehensive data analysis tools.',
     technologies: ['React', 'Node.js', 'Express.js', 'MySQL', 'Axios', 'MySQL2' ,'PWA', 'IndexedDB', 'Mantine'],
-    category: 'Enterprise Application',
+    category: 'Government Enterprise Application',
     highlights: [
       'Reduced data processing time by 75%',
       'Supports offline functionality for at-sea research',
@@ -26,7 +26,7 @@ const projects = [
     title: 'Travel Request',
     description: 'Web application for managing employee travel requests. Streamlined paper-based workflow by automating approvals, creating custom reporting, and integratiion with Google Workspace tools.',
     technologies: ['Vue.js', 'Vuetify', 'Google Apps Script', 'GitLab', 'Google Sheets', 'Jira', 'Balsamiq'],
-    category: 'Enterprise Application',
+    category: 'Government Enterprise Application',
     highlights: [
       'Streamlined travel request process',
       'Integrated with Google Workspace tools',
@@ -40,7 +40,7 @@ const projects = [
     title: 'Micro-Purchasing',
     description: 'Web application streamlining the micro-purchasing process for government agencies. Features include real-time approval workflows, budget tracking, and vendor management.',
     technologies: ['Vue.js', 'Vuetify', 'Google Apps Script', 'GitLab', 'Google Sheets', 'Jira'],
-    category: 'Enterprise Application',
+    category: 'Government Enterprise Application',
     highlights: [
       'Facilitated government purchasing',
       'Real-time approval tracking',
@@ -54,7 +54,7 @@ const projects = [
     title: 'Item Exchange',
     description: 'Internal application used for exchanging items between departments. Features include image uploads, automated email notifications, and inventory management.',
     technologies: ['Vue.js', 'Vuetify', 'Google Apps Script', 'GitLab', 'Google Sheets', 'Jira'],
-    category: 'Enterprise Application',
+    category: 'Government Enterprise Application',
     highlights: [
       'Seamless item exchange process',
       'Automated email notifications',
@@ -68,7 +68,7 @@ const projects = [
     title: 'Account Request',
     description: 'Internal application used for managing user account requests. Features include image uploads/display, automated email notifications, and inventory management.',
     technologies: ['jQuery', 'Javascript', 'Material Design', 'Google Apps Script', 'GitLab', 'Google Sheets'],
-    category: 'Enterprise Application',
+    category: 'Government Enterprise Application',
     highlights: [
       'Streamlined account request process',
       'Automated email notifications',
@@ -82,7 +82,7 @@ const projects = [
     title: 'VPN Request',
     description: 'Simple application used for managing internal VPN requests.',
     technologies: ['Vue.js', 'Vuetify', 'Google Apps Script', 'GitLab', 'Google Sheets', 'Jira'],
-    category: 'Enterprise Application',
+    category: 'Government Enterprise Application',
     highlights: [
       'Streamlined VPN request process',
 			'Jira integration',
