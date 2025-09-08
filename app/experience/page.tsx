@@ -13,16 +13,14 @@ const experiences = [
     duration: 'Nov 2022 - Present · 2 yrs 4 mos',
     logo: '/noaa_logo.png',
     achievements: [
-      'Earned rapport from stakeholders by participating in at sea surveys as the role of a scientist, gaining first hand knowledge of user needs and pain points.',
-      'Improved development timelines by creating prototypes as a communication tool for workflow and design verification with clients.',
-      'Reduced tech debt by refactoring app using dated language and messy code into modern app using best practices.',
-      'Boosted team understanding of product needs by documenting app architecture and technical design decisions.',
-      'Smoothly transitioned the modernization of legacy systems by modularizing incoming new technology replacements.',
-      'Released bug free version updates by thoroughly testing team members\' merge requests.',
-      'Created reputable full stack apps by combining SDLC and design thinking principles resulting in user-centered, intuitive workflows.',
-      'Resolved complex user problems by implementing appropriate technical solutions supporting needs such as offline-first and graphically displaying data from oceanographic sensors.',
-      'Increased team breadth by mentoring and coaching junior developer.',
-      'Managed expectations by accurately estimating time to completion for version release iterations and communicating updates to clients.'
+			'Built stakeholder trust by participating in at-sea surveys, uncovering critical user needs.',
+			'Accelerated development timelines with prototypes that validated workflows and designs.',
+			'Boosted team clarity by documenting application architecture and technical decisions.',
+			'Streamlined legacy system upgrades through modular technology integration.',
+			'Delivered bug-free apps via rigorous team code testing.',
+			'Reduced data processing by 75% with intuitive, SDLC-driven workflows.',
+			'Resolved complex user challenges with offline-first solutions and sensor data graph visualizations.',
+			'Owned end-to-end app development across QA, project management, UX, architecture, and support.',
     ],
     skills: [
       'React.js', 'Python', 'Express.js', 'SQL', 'Javascript', 'MySQL', 
@@ -40,36 +38,49 @@ const experiences = [
     duration: 'Aug 2021 - Nov 2022 · 1 yr 4 mos',
 		logo: '/ibss.png',
     achievements: [
-      'Developed full stack enterprise applications replacing paper form-based workflows and providing smooth processes for users and managers, substantially reducing process times and overall stress of staff.',
-      'Performed as project manager organizing the creation of new applications for enterprise use.',
-      'Earned user trust by creating intuitive, reliable, high quality, and stable applications.',
-      'Managed stakeholder expectations by communicating feature updates and demonstrating version release iterations, building a sense of product ownership.',
-      'Gently guided clients through technical issues while offering solutions or work around approaches.',
-      'Sustained development best practices by using clean code principles.',
-      'Built strong relationships by naturally connecting with clients and team.',
-      'Improved team workflow by researching new ideas and tools.',
-      'Supported government and scientific needs by creating applications designed to ease workflow and improve turn around times.'
+      'Developed full-stack enterprise apps to streamline workflows and reduce user and manager workload.',
+			'Led as project manager to deliver new enterprise applications.',
+			'Earned user trust with intuitive, reliable applications.',
+			'Managed stakeholder expectations by communicating feature updates and version releases.',
+			'Guided clients through technical issues with effective solutions.',
+			'Maintained development best practices using clean code principles.',
+			'Built strong client and team relationships through interpersonal skills.',
+			'Improved team workflow by exploring and implementing new tools and ideas.',
+			'Supported government and scientific operations with workflow-enhancing applications.',
     ],
     skills: [
-      'Javascript', 'Vue.js', 'Vuetify', 'Design Thinking', 'Back-End Web Development',
-      'Google Apps Script', 'Full-Stack Development', 'Front-End Development',
-      'Wireframing', 'Balsamiq', 'GitLab', 'End to End testing', 'jQuery', 'Jira', 'Java', 'Java Swing', 'Material Design',
+      'Javascript', 'Vue.js', 'Vuetify', 'Design Thinking',
+      'Google Apps Script', 'Full-Stack Development',
+      'Wireframing', 'Balsamiq', 'GitLab', 'End to End testing', 'jQuery', 'Jira', 'Material Design',
 			'Design Thinking', 'Windows OS', 'VS Code', 'Customer Support'
     ]
   },
   {
+    title: 'Bartender / Shift Lead',
+    company: 'The Overhang',
+    location: 'Dahlonega, GA',
+    duration: 'Jan 2019 - February 2020 · 1 year 1 mos',
+		logo: '/overhang.jpg',
+    achievements: [
+			'Directed military personnel, combining leadership and teamwork to deliver efficient service.',
+			'Maintained safety and cleanliness, ensuring a secure environment.',
+			'Reconciled daily transactions, ensuring accurate accounting.',
+    ],
+    skills: ['Customer Relationship Management (CRM)', 'Bartending', 'Communication', 'Employee Training', 'Sales', 'Multitasking', 'Team Leadership', 'Conflict Resolution']
+  },
+	{
     title: 'Web Developer',
     company: 'Glasswerks',
     location: 'Remote',
     duration: 'Nov 2018 - May 2019 · 7 mos',
 		logo: '/glasswerks.png',
     achievements: [
-      'Helped develop and deploy customer order tracking web app used daily',
-      'Used Elixir and TDD skills to test and deploy back end logic',
-      'Implemented new features and bug fixes according to requirements',
-      'Opened, reviewed, and approved pull requests using GitHub'
+      'Developed and deployed a customer order tracking web app that improved daily operational efficiency for clients.',
+			'Applied Elixir and TDD to ensure robust backend logic, reducing post-deployment bugs.',
+			'Implemented new features and fixed critical bugs based on user requirements, enhancing app functionality.',
+			'Reviewed and approved pull requests via GitHub, ensuring code quality and team alignment.',
     ],
-    skills: ['Elixir', 'Phoenix', 'Erlang', 'GitHub', 'Slack', 'Mac OS', 'Git', 'Atom']
+    skills: ['Elixir', 'Phoenix', 'Erlang', 'GitHub', 'Mac OS', 'Git', 'Atom']
   },
   {
     title: 'Software Developer [Intern]',
@@ -78,13 +89,10 @@ const experiences = [
     duration: 'Jun 2018 - Aug 2018 · 2 mos',
 		logo: '/common-ledger.jpg',
     achievements: [
-      'Assisted in developing and deploying a full stack web application used daily by the general public.',
-      'Relocated to New Zealand to work closely with developers to manage complex projects.',
-      'Performed in a full stack environment using skills such as unit testing.',
-      'Directed daily meetings to discuss updates and strategies using Scrum practices fulfilling the role of Scrum Master.',
-      'Provided bug free code by critiquing personal work before submission.',
-      'Used scalable cloud storage for all back end data.',
-      'Created unique experiences by tailoring user interfaces to client needs.'
+			'Relocated to New Zealand to collaborate closely with developers on complex projects, ensuring timely delivery.',
+			'Performed in a full-stack environment using unit testing to ensure robust and reliable code.',
+			'Directed Scrum meetings to align on updates and strategies, fulfilling the role of Scrum Master.',
+			'Delivered bug-free code by rigorously critiquing work before submission.',
     ],
     skills: [
       'Javascript', 'Vue.js', 'TypeScript', 'Scrum', 'Agile Methodologies', 
@@ -98,14 +106,13 @@ const experiences = [
     duration: 'Jul 2013 - May 2018 · 4 yrs 11 mos',
 		logo: '/bairs.jpg',
     achievements: [
-      'Used empathy and listening skills to resolve any customer grievances',
-      'Multitasked between bartending, completing take away orders, and cleaning',
-      'Supported Autism Awareness Day by creating and promoting new cocktail',
-      'Single handedly opened, operated and closed the bar and cocktail area of the restaurant',
-      'Set standards for cleanliness and led by example',
-      'Built an efficient staff by training and directing new employees',
-      'Won annual contests by promoting and selling the most gift cards ($2,500 in 2016) during the holiday season.',
-      'Earned employee of the month award'
+			'Resolved customer issues with empathy, enhancing satisfaction.',
+			'Managed daily transactions and prepared bank deposits accurately.',
+			'Closed and secured the bar, maintaining safety standards.',
+			'Sold $2,500 in gift cards during the holiday season, winning annual sales contest.',
+			'Verified ages of patrons, supporting law enforcement protocols and compliance.',
+			'Embraced tasks with energy and positivity, improving team morale.',
+			'Earned Employee of the Month award, recognizing outstanding performance.',
     ],
     skills: [
       'Customer Relationship Management (CRM)', 'Bartending', 'Communication', 
@@ -119,13 +126,15 @@ const experiences = [
     duration: 'Jan 2017 - Jul 2017 · 7 mos',
 		logo: '/BBBS.png',
     achievements: [
-      'Acquired new donor leads still used for current fundraising events',
-      'Established connections with board members using interpersonal skills',
-      'Raised more money in auction items than any other employee, by $10,455',
-      'Led role playing exercises for team on how to engage potential donors',
-      'Used passion for agency\'s cause to obtain funds such as a single cash donation for $10,000',
-      'Obtained free donated air time by networking with local tv station',
-      'Raised $13,455 in value for silent auction items surpassing self provided goal by 65%'
+      'Generated new donor leads for fundraising events, expanding outreach opportunities.',
+      'Built relationships with board members through strong interpersonal skills.',
+      'Increased auction item value by $10,455, outperforming all colleagues.',
+      'Volunteered for diverse tasks, demonstrating adaptability and initiative.',
+      'Assisted in planning signature fundraising events, ensuring successful execution.',
+      'Led team role-play exercises, improving donor engagement strategies.',
+      'Secured major donations, including a single $10,000 pledge, through passion and advocacy.',
+      'Negotiated free media coverage by networking with a local TV station.',
+      'Raised $13,455 for a silent auction, exceeding personal fundraising goals by $10,000.',
     ],
     skills: [
       'Communication', 'Sales', 'Customer Engagement', 'Fundraising', 'Nonprofit Volunteering', 'Community Outreach'
