@@ -6,11 +6,31 @@ import Card, { CardContent, CardHeader } from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
 
 const experiences = [
+    {
+    title: 'Senior Software Developer',
+    company: 'Changeis',
+    location: 'United States · Remote',
+    duration: 'Nov 2025 - Present · 8 mos',
+    logo: 'https://changeis.com/wp-content/themes/changeis/img/icons/favicon-32x32.png',
+    achievements: [
+			'Built end-to-end registration lifecycle support including amendments, transfers, and entity updates',
+			'Designed scalable database architecture for registration, payments, and compliance tracking systems',
+      'Strengthened production reliability through critical hotfixes and rapid incident response under deadlines',
+      'Collaborated with cross-functional teams to deliver new features and enhancements',
+      'Maintained clean code quality and best practices through code reviews and testing',
+      'Designed intuitive user interfaces and workflows to enhance user experience and reduce support tickets',
+    ],
+    skills: [
+      'React.js', 'Typescript', 'Node.js', 'Adonis/Lucid', 'SQL', 'Javascript', 'PostGres', 
+      'MUI', 'AWS', 'Jira', 'Full-Stack Development', 'UX Designer', 'End to End testing', 
+      'Windows OS', 'VS Code'
+    ]
+  },
   {
     title: 'Lead Software Engineer',
     company: 'NOAA: National Oceanic & Atmospheric Administration',
     location: 'Seattle, Washington, United States · Remote',
-    duration: 'Nov 2022 - Present · 2 yrs 4 mos',
+    duration: 'Nov 2022 - Nov 2025 · 3 yrs',
     logo: '/noaa_logo.png',
     achievements: [
 			'Built stakeholder trust by participating in at-sea surveys, uncovering critical user needs.',
@@ -55,19 +75,6 @@ const experiences = [
 			'Design Thinking', 'Windows OS', 'VS Code', 'Customer Support'
     ]
   },
-  {
-    title: 'Bartender / Shift Lead',
-    company: 'The Overhang',
-    location: 'Dahlonega, GA',
-    duration: 'Jan 2019 - February 2020 · 1 year 1 mos',
-		logo: '/overhang.jpg',
-    achievements: [
-			'Directed military personnel, combining leadership and teamwork to deliver efficient service.',
-			'Maintained safety and cleanliness, ensuring a secure environment.',
-			'Reconciled daily transactions, ensuring accurate accounting.',
-    ],
-    skills: ['Customer Relationship Management (CRM)', 'Bartending', 'Communication', 'Employee Training', 'Sales', 'Multitasking', 'Team Leadership', 'Conflict Resolution']
-  },
 	{
     title: 'Web Developer',
     company: 'Glasswerks',
@@ -107,11 +114,6 @@ const experiences = [
 		logo: '/bairs.jpg',
     achievements: [
 			'Resolved customer issues with empathy, enhancing satisfaction.',
-			'Managed daily transactions and prepared bank deposits accurately.',
-			'Closed and secured the bar, maintaining safety standards.',
-			'Sold $2,500 in gift cards during the holiday season, winning annual sales contest.',
-			'Verified ages of patrons, supporting law enforcement protocols and compliance.',
-			'Embraced tasks with energy and positivity, improving team morale.',
 			'Earned Employee of the Month award, recognizing outstanding performance.',
     ],
     skills: [
@@ -127,14 +129,8 @@ const experiences = [
 		logo: '/BBBS.png',
     achievements: [
       'Generated new donor leads for fundraising events, expanding outreach opportunities.',
-      'Built relationships with board members through strong interpersonal skills.',
-      'Increased auction item value by $10,455, outperforming all colleagues.',
-      'Volunteered for diverse tasks, demonstrating adaptability and initiative.',
-      'Assisted in planning signature fundraising events, ensuring successful execution.',
-      'Led team role-play exercises, improving donor engagement strategies.',
-      'Secured major donations, including a single $10,000 pledge, through passion and advocacy.',
       'Negotiated free media coverage by networking with a local TV station.',
-      'Raised $13,455 for a silent auction, exceeding personal fundraising goals by $10,000.',
+      'Raised $13,455 for a silent auction, exceeding fundraising goals by $10,000.',
     ],
     skills: [
       'Communication', 'Sales', 'Customer Engagement', 'Fundraising', 'Nonprofit Volunteering', 'Community Outreach'
