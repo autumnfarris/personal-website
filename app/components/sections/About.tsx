@@ -6,9 +6,8 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   const skills = [
-    'JavaScript', 'React', 'Next.js', 'Vue.js', 'Node.js',
-    'Python', 'SQL', 'MySQL', 'Express.js', 'Mantine',
-    'TailwindCSS', 'SCSS', 'Git','Google Apps Script'
+    'JavaScript', 'React', 'Typescript', 'Node.js',
+    'SQL', 'PostGres', 'Express.js', 'Mantine',
   ];
 
   return (
@@ -127,11 +126,12 @@ export default function About() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Core Competencies</h4>
                     <ul className="text-sm text-gray-600 space-y-1 list-disc list-inside">
-                      <li>Full-Stack Web Development</li>
+                      <li>Full-Stack Software Engineer</li>
                       <li>User Experience Design</li>
 											<li>Communication</li>
                       <li>Technical Documentation</li>
                       <li>Project Leadership</li>
+                      <li>Clean Coder</li>
                     </ul>
                   </div>
                 </div>

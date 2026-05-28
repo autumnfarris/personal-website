@@ -8,16 +8,47 @@ import { ArrowTopRightOnSquareIcon, CodeBracketIcon } from '@heroicons/react/24/
 
 const projects = [
   {
+    title: 'MOTUS',
+    description: 'Streamlines the registration process, enabling entities to submit required information, update records, and comply with federal regulations for the trucking industry.',
+    technologies: ['React', 'TypeScript', 'MUI', 'Node.js', 'Adonis/Lucid', 'PostGres', 'SQL', 'AWS'],
+    category: 'Government Enterprise Application',
+    highlights: [
+      'Modernization of FMCSA registration workflow',
+      'End-to-end entity lifecycle automation',
+      'Improved USDOT registration data accuracy',
+      'Used by the commercial motor vehicle community'
+    ],
+    status: 'Production',
+    year: '2025 - 2026',
+    liveUrl: 'https://motus.dot.gov/',
+  },
+  {
+    title: 'Personal Developer Portfolio',
+    description: 'Modern, responsive portfolio website built with Next.js and featuring smooth animations, optimized performance, and accessibility-first design principles.',
+    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Claude', 'Lyra'],
+    category: 'Portfolio',
+    highlights: [
+      'Lighthouse score of 100/100',
+      'Smooth scroll animations',
+      'Fully responsive design',
+      'Accessibility compliant'
+    ],
+    status: 'Active',
+    year: '2025',
+    liveUrl: '/',
+    githubUrl: 'https://github.com/autumnfarris/personal-website'
+  },
+  {
     title: 'Oceanographic Data Management System',
     description: 'Enterprise-level application for managing scientific data from oceanographic surveys. Features offline-first architecture, real-time sensor data visualization, and comprehensive data analysis tools.',
-    technologies: ['React', 'Node.js', 'Express.js', 'MySQL', 'Axios', 'MySQL2' ,'PWA', 'IndexedDB', 'Mantine'],
+    technologies: ['React', 'Node.js', 'Express.js', 'MySQL', 'Axios', 'MySQL2', 'PWA', 'IndexedDB', 'Mantine'],
     category: 'Government Enterprise Application',
     highlights: [
       'Reduced data processing time by 75%',
       'Supports offline functionality for at-sea research',
       'Handles data from 3 different sensor types',
       'Used by federal scientists and researchers',
-			'Impacts international seafood markets'
+      'Impacts international seafood markets'
     ],
     status: 'Production',
     year: '2023-2025'
@@ -31,7 +62,7 @@ const projects = [
       'Streamlined travel request process',
       'Integrated with Google Workspace tools',
       'Seamless user experience',
-			'Automated email notifications'
+      'Automated email notifications'
     ],
     status: 'Production',
     year: '2022-2023'
@@ -45,7 +76,7 @@ const projects = [
       'Facilitated government purchasing',
       'Real-time approval tracking',
       'Custom report generation',
-			'User-friendly interface'
+      'User-friendly interface'
     ],
     status: 'Production',
     year: '2023'
@@ -64,7 +95,7 @@ const projects = [
     status: 'Production',
     year: '2022'
   },
-	{
+  {
     title: 'Account Request',
     description: 'Internal application used for managing user account requests. Features include image uploads/display, automated email notifications, and inventory management.',
     technologies: ['jQuery', 'Javascript', 'Material Design', 'Google Apps Script', 'GitLab', 'Google Sheets'],
@@ -78,36 +109,20 @@ const projects = [
     status: 'Production',
     year: '2022'
   },
-	{
+  {
     title: 'VPN Request',
     description: 'Simple application used for managing internal VPN requests.',
     technologies: ['Vue.js', 'Vuetify', 'Google Apps Script', 'GitLab', 'Google Sheets', 'Jira'],
     category: 'Government Enterprise Application',
     highlights: [
       'Streamlined VPN request process',
-			'Jira integration',
+      'Jira integration',
       'Automated email notifications',
       'Custom reporting'
     ],
     status: 'Production',
     year: '2022'
   },
-  {
-    title: 'Personal Developer Portfolio',
-    description: 'Modern, responsive portfolio website built with Next.js and featuring smooth animations, optimized performance, and accessibility-first design principles.',
-    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Claude', 'Lyra'],
-    category: 'Portfolio',
-    highlights: [
-      'Lighthouse score of 100/100',
-      'Smooth scroll animations',
-      'Fully responsive design',
-      'Accessibility compliant'
-    ],
-    status: 'Active',
-    year: '2025',
-    liveUrl: '/',
-    githubUrl: 'https://github.com/autumnfarris/personal-website'
-  }
 ];
 
 export default function ProjectsPage() {
@@ -125,8 +140,8 @@ export default function ProjectsPage() {
             Featured <span className="text-amber-600">Projects</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A showcase of applications and systems I&apos;ve designed and built, 
-            ranging from enterprise solutions to personal projects that demonstrate 
+            A showcase of applications and systems I&apos;ve designed and built,
+            ranging from enterprise solutions to personal projects that demonstrate
             my passion for creating meaningful digital experiences.
           </p>
         </motion.div>
@@ -142,7 +157,7 @@ export default function ProjectsPage() {
               viewport={{ once: true }}
             >
               <Card className="overflow-hidden">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
                   {/* Project Info */}
                   <div className="lg:col-span-2">
                     <CardHeader>
@@ -158,51 +173,23 @@ export default function ProjectsPage() {
                             <span>•</span>
                             <span>{project.year}</span>
                             <span>•</span>
-                            <span className={`font-medium ${
-                              project.status === 'Production' ? 'text-green-600' :
+                            <span className={`font-medium ${project.status === 'Production' ? 'text-green-600' :
                               project.status === 'Active' ? 'text-blue-600' :
-                              'text-gray-600'
-                            }`}>
+                                'text-gray-600'
+                              }`}>
                               {project.status}
                             </span>
                           </div>
                         </div>
-                        
-                        {/* Links */}
-                        {(project.liveUrl || project.githubUrl) && (
-                          <div className="flex gap-2">
-                            {project.liveUrl && (
-                              <Button
-                                href={project.liveUrl}
-                                variant="outline"
-                                size="sm"
-                                className="gap-2"
-                              >
-                                <ArrowTopRightOnSquareIcon className="h-4 w-4" />
-                                Live Demo
-                              </Button>
-                            )}
-                            {project.githubUrl && (
-                              <Button
-                                href={project.githubUrl}
-                                variant="ghost"
-                                size="sm"
-                                className="gap-2"
-                              >
-                                <CodeBracketIcon className="h-4 w-4" />
-                                Code
-                              </Button>
-                            )}
-                          </div>
-                        )}
+
                       </div>
                     </CardHeader>
-                    
+
                     <CardContent>
                       <p className="text-gray-700 mb-6 leading-relaxed">
                         {project.description}
                       </p>
-                      
+
                       {/* Technologies */}
                       <div className="mb-6">
                         <h4 className="font-semibold text-gray-900 mb-3">Technologies Used</h4>
@@ -216,10 +203,25 @@ export default function ProjectsPage() {
                       </div>
                     </CardContent>
                   </div>
-                  
+
                   {/* Project Highlights */}
                   <div className="lg:col-span-1">
-                    <CardContent className="h-full flex flex-col justify-center">
+                    <CardContent className="h-full flex flex-col">
+                      {(project.liveUrl || project.githubUrl) && (
+                        <div className="flex gap-2 justify-end mb-6">
+                          {project.liveUrl && (
+                            <Button
+                              href={project.liveUrl}
+                              variant="outline"
+                              size="sm"
+                              className="gap-2"
+                            >
+                              <ArrowTopRightOnSquareIcon className="h-4 w-4" />
+                              Live Demo
+                            </Button>
+                          )}
+                        </div>
+                      )}
                       <h4 className="font-semibold text-gray-900 mb-4">Key Highlights</h4>
                       <ul className="space-y-3">
                         {project.highlights.map((highlight, highlightIndex) => (
@@ -227,9 +229,9 @@ export default function ProjectsPage() {
                             key={highlight}
                             initial={{ opacity: 0, x: 20 }}
                             whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ 
-                              duration: 0.5, 
-                              delay: (index * 0.1) + (highlightIndex * 0.1) 
+                            transition={{
+                              duration: 0.5,
+                              delay: (index * 0.1) + (highlightIndex * 0.1)
                             }}
                             viewport={{ once: true }}
                             className="flex items-start gap-3 text-sm text-gray-700"
@@ -259,7 +261,7 @@ export default function ProjectsPage() {
             Interested in Working Together?
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            I&apos;m always excited to take on new challenges and collaborate on innovative projects. 
+            I&apos;m always excited to take on new challenges and collaborate on innovative projects.
             Let&apos;s discuss how we can bring your ideas to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

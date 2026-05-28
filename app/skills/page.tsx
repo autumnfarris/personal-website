@@ -5,36 +5,36 @@ import Card, { CardContent, CardHeader } from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
 
 const skillCategories = [
-	{
-		title: 'Frontend Development',
-		skills: ['React', 'Next.js', 'Vue.js', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'SCSS', 'Mantine', 'Vuetify', 'Google Apps Script'],
-		icon: '🎨'
-	},
-	{
-		title: 'Backend Development',
-		skills: ['Node.js', 'Express.js', 'Python', 'RESTful APIs', 'Axios','Google Apps Script', 'MySQL2'],
-		icon: '⚙️'
-	},
-	{
-		title: 'AI & Machine Learning',
-		skills: ['GitHub Copilot', 'Claude', 'ChatGPT', 'Lyra AI Prompt Optimization',],
-		icon: '🤖'
-	},
-	{
-		title: 'Development Tools',
-		skills: ['Git', 'GitHub', 'GitLab', 'Jira', 'VS Code', 'End to End Testing', 'Webpack', 'Slack', 'Agile'],
-		icon: '🛠️'
-	},
-	{
-		title: 'Design & UX',
-		skills: ['Balsamiq', 'Wireframing', 'Prototyping', 'User Research', 'Design Systems', 'Responsive Design'],
-		icon: '🎯'
-	},
-	{
-		title: 'Database & OS',
-		skills: ['MySQL', 'SQLite', 'Oracle', 'NoSQL', 'Windows OS', 'Mac OS', 'IIS'],
-		icon: '🗃️'
-	},
+  {
+    title: 'Frontend Development',
+    skills: ['React', 'Next.js', 'Vue.js', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'Mantine', 'Vuetify'],
+    icon: '🎨'
+  },
+  {
+    title: 'Backend Development',
+    skills: ['Node.js', 'Express.js', 'Adonis/Lucid', 'RESTful APIs', 'Axios', 'MySQL2'],
+    icon: '⚙️'
+  },
+  {
+    title: 'Database & OS',
+    skills: ['PostGres', 'MySQL', 'NoSQL', 'Windows OS', 'Mac OS', 'IIS'],
+    icon: '🗃️'
+  },
+  {
+    title: 'AI & Machine Learning',
+    skills: ['GitHub Copilot', 'Claude', 'ChatGPT', 'Chat Prompt Optimization'],
+    icon: '🤖'
+  },
+  {
+    title: 'Development Tools',
+    skills: ['Git', 'GitHub', 'GitLab', 'Jira', 'VS Code', 'End to End Testing', 'Webpack', 'Slack', 'Agile'],
+    icon: '🛠️'
+  },
+  {
+    title: 'Design & UX',
+    skills: ['Balsamiq', 'Wireframing', 'Prototyping', 'User Research', 'Design Systems', 'Responsive Design'],
+    icon: '🎯'
+  },
 ];
 
 const certifications = [
@@ -56,7 +56,6 @@ export default function SkillsPage() {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -96,13 +95,13 @@ export default function SkillsPage() {
                         key={skill}
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ 
-                          duration: 0.3, 
-                          delay: (index * 0.1) + (skillIndex * 0.02) 
+                        transition={{
+                          duration: 0.3,
+                          delay: (index * 0.1) + (skillIndex * 0.02)
                         }}
                       >
-                        <Badge 
-                          variant="default" 
+                        <Badge
+                          variant="default"
                           className="hover:scale-105 transition-transform cursor-default"
                         >
                           {skill}
@@ -127,7 +126,7 @@ export default function SkillsPage() {
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
             Certifications & Education
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {certifications.map((cert, index) => (
               <motion.div
@@ -196,13 +195,13 @@ export default function SkillsPage() {
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              I believe in writing clean, maintainable code that not only solves problems but also 
-              tells a story. Every line of code should serve a purpose, every component should be 
+              I believe in writing clean, maintainable code that not only solves problems but also
+              tells a story. Every line of code should serve a purpose, every component should be
               reusable, and every user interaction should feel intuitive and delightful.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Technology is constantly evolving, and I&apos;m committed to continuous learning and 
-              staying current with industry best practices. I strive to balance innovation with 
+              Technology is constantly evolving, and I&apos;m committed to continuous learning and
+              staying current with industry best practices. I strive to balance innovation with
               stability, always considering the long-term impact of architectural decisions.
             </p>
           </div>
